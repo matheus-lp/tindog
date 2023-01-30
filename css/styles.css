@@ -1,24 +1,25 @@
 /************************** ELEMENT ************************/
+
 body {
     font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
+}
+
+h1 {
     font-size: 3.5rem;
     line-height: 1.5;
-    text-align: center;
 
 }
 
 h2 {
-    font-weight: 900;
     font-size: 3rem;
     line-height: 1.5;
 }
 
 h3 {
-    font-weight: 900;
     line-height: 1.5;
 }
 
@@ -32,13 +33,8 @@ li {
 
 /*************************** CLASS ************************/
 
-.col-lg-6 {
-    text-align: center;
-}
-
 .download-buttom {
     margin: 5% 3% 5% 0%;
-    ;
 }
 
 .navbar {
@@ -111,17 +107,12 @@ li {
     color: white;
 }
 
-.col {
-    padding: 0 12px;
-}
-
 .cta-h3 {
     color: white;
 }
 
 .cta-buttom {
     margin: 3% 3%;
-    ;
 }
 
 .cta-col {
@@ -131,7 +122,12 @@ li {
     padding: 15px 0 0 0;
 }
 
+.social-icon {
+    margin: 20px 10px;
+}
+
 /***************************** ID *************************/
+
 #apple-icon {
     width: 16px;
     fill: none;
@@ -142,13 +138,19 @@ li {
     color: white;
 }
 
+#title-col {
+    text-align: center;
+}
+
+#iphone-col {
+    text-align: center;
+}
+
 #features {
     position: relative;
     padding: 7% 15%;
     background-color: white;
-
 }
-
 
 #press {
     background-color: #ef8172;
@@ -157,7 +159,7 @@ li {
 }
 
 #pricing {
-    padding: 15% 7%;
+    padding: 15% 7% 10%;
     text-align: center;
     line-height: 1.5;
 }
@@ -165,7 +167,6 @@ li {
 #button-chihuahua {
     color: #ef8172;
     border-color: #ef8172;
-
 }
 
 #button-chihuahua:hover {
@@ -177,7 +178,6 @@ li {
     color: white;
     border-color: #ef8172;
     background-color: #ef8172;
-
 }
 
 #button-labrador:hover {
@@ -189,7 +189,6 @@ li {
     color: white;
     border-color: #ef8172;
     background-color: #ef8172;
-
 }
 
 #button-mastiff:hover {
@@ -200,17 +199,18 @@ li {
 #cta {
     text-align: center;
     background-color: #ff4c68;
-    max-height: 200px;
+    max-height: fit-content;
 }
 
 #footer {
     text-align: center;
     margin-top: 2%;
 }
+
 /************************* BIG SCREENS *************************/
 
 @media (min-width: 992px) {
-    h1 {
+    .big-heading {
         font-weight: 900;
         font-size: 3.5rem;
         line-height: 1.5;
@@ -228,8 +228,11 @@ li {
     }
 
     .container-fluid {
-        padding: 3% 15% 7%;
+        padding: 5% 15% 5%;
+    }
 
+    .download-buttom {
+        margin: 5% 3% 5% 0;
     }
 
     #iphone-mockup {
@@ -239,7 +242,11 @@ li {
         width: 60%;
     }
 
-    .col-iphone {
+    #title-col {
+        text-align: left;
+    }
+
+    #iphone-col {
         text-align: right;
         height: 250px;
     }
